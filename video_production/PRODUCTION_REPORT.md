@@ -13,7 +13,7 @@
 | `build_sound.py` | Synthesises the music bed and sound effects |
 | `generate_voiceover.py` | Generates the voiceover from the locked script |
 
-The large media files (the MP4 and the WAVs) are kept out of git and delivered alongside it.
+All files are in this folder.
 
 ### Shot list (as built)
 | Time | Frames | Shot |
