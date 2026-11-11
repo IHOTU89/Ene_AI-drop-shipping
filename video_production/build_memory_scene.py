@@ -517,11 +517,11 @@ cam_m_d.dof.focus_object = None
 def label(text, frames_on):
     cu = bpy.data.curves.new("Label_" + text.replace(" ", "_"), "FONT")
     cu.body = text
-    cu.size = 0.055
+    cu.size = 0.055 * 0.4 / 1.7  # same framing, but in front of every neuron
     o = bpy.data.objects.new("Label_" + text.replace(" ", "_"), cu)
     sc.collection.objects.link(o)
     o.parent = cam_m
-    o.location = (-0.46, -0.20, -1.7)
+    o.location = (-0.099, 0.064, -0.4)  # top-left clear band, in front of every neuron
     m, b = mat("LabelInk", (0.98, 0.94, 0.88), rough=0.4)
     b.inputs["Emission Color"].default_value = (1, 0.95, 0.9, 1)
     b.inputs["Emission Strength"].default_value = 0.6
